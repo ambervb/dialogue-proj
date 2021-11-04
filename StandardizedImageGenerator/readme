@@ -1,0 +1,27 @@
+This script converts .wav-files into spectrograms that are loaded & saved as three DataLoader-objects.
+
+Usage:
+
+Before running, review the exact file structure below:
+
+mainfolder/
+    SIGMA.ipynb
+    audio/
+        wavfiles/
+            /#place your .wav file(s) here
+    images_nosplit/
+        /spectrograms
+            #this is where the converted spectrograms will be stored
+    images_splitfolders/
+        test/
+            spectrograms/
+                #this is where the spectrograms used for testing will be stored
+        train/
+            spectrograms/
+                #this is where the spectrograms used for training will be stored
+        val/
+            spectrograms/
+                #this is where the spectrograms used for validating will be stored
+        
+Only the 'audio'-folder and 'wavfiles'-subfolder need to be created. The program will (should) create all the other folders & files
+The dataloader objects will be created in the root folder (same as the .ipynb)
